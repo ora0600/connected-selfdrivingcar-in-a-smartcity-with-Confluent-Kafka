@@ -47,7 +47,7 @@ git clone https://github.com/ora0600/connected-selfdrivingcar-in-a-smartcity-wit
 ```
 Now, everything is stored for execute this demo.
 You need to download Simlulator by yourself following these instructions:
-Download Simulator Version 1 from : [UDACITY] (https://github.com/udacity/self-driving-car-sim)
+Download Simulator Version 1 from : [UDACITY](https://github.com/udacity/self-driving-car-sim)
 ```bash
 mkdir self-driving-car
 cd self-driving-car
