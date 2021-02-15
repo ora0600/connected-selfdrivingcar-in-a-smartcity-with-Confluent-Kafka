@@ -1,0 +1,198 @@
+[
+    {"name": "Nürburgring 1",
+    "location": {
+            "lon": 50.3351398,
+            "lat": 6.9470903
+    }},
+    {"name": "Nürburgring 2",
+    "location": {
+            "lon": 50.3340882, 
+            "lat": 6.9454264
+    }},
+    {"name": "Nürburgring 3",
+    "location": {
+            "lon": 50.3335069, 
+            "lat": 6.9445754
+    }},
+    {"name": "Nürburgring 4",
+    "location": {
+            "lon": 50.3330502, 
+            "lat": 6.9437624
+    }},
+    {"name": "Nürburgring 5",
+    "location": {
+            "lon": 50.3324277, 
+            "lat": 6.9426784
+    }},
+    {"name": "Nürburgring 6",
+    "location": {
+            "lon": 50.3317843, 
+            "lat": 6.9410634
+    }},
+    {"name": "Nürburgring 7",
+    "location": {
+            "lon": 50.3328290, 
+            "lat": 6.9416270
+    }},
+    {"name": "Nürburgring 8",
+    "location": {
+            "lon": 50.3336486, 
+            "lat": 6.9405699
+    }},
+    {"name": "Nürburgring 9",
+    "location": {
+            "lon": 50.3332474, 
+            "lat": 6.9387218
+    }},
+    {"name": "Nürburgring 10",
+    "location": {
+            "lon": 50.3326455, 
+            "lat": 6.9399030
+    }},
+    {"name": "Nürburgring 11",
+    "location": {
+            "lon": 50.3313760, 
+            "lat": 6.9398594
+    }},
+    {"name": "Nürburgring 12",
+    "location": {
+            "lon": 50.3291963, 
+            "lat": 6.9390031
+    }},
+    {"name": "Nürburgring 13",
+    "location": {
+            "lon": 50.3279267, 
+            "lat": 6.9397347
+    }},
+    {"name": "Nürburgring 14",
+    "location": {
+            "lon": 50.3270341, 
+            "lat": 6.9399838
+    }},
+    {"name": "Nürburgring 15",
+    "location": {
+            "lon": 50.3265983, 
+            "lat": 6.9388348
+    }},
+    {"name": "Nürburgring 16",
+    "location": {
+            "lon": 50.3259029, 
+            "lat": 6.9373174
+    }},
+    {"name": "Nürburgring 17",
+    "location": {
+            "lon": 50.3249029, 
+            "lat": 6.9359136
+    }},
+    {"name": "Nürburgring 18",
+    "location": {
+            "lon": 50.3240621, 
+            "lat": 6.9343582
+    }},
+    {"name": "Nürburgring 19",
+    "location": {
+            "lon": 50.3252903, 
+            "lat": 6.9353768
+    }},
+    {"name": "Nürburgring 20",
+    "location": {
+            "lon": 50.3262972, 
+            "lat": 6.9369861
+    }},
+    {"name": "Nürburgring 21",
+    "location": {
+            "lon": 50.3268575, 
+            "lat": 6.9374304
+    }},
+    {"name": "Nürburgring 22",
+    "location": {
+            "lon": 50.3275530, 
+            "lat": 6.9370455
+    }},
+    {"name": "Nürburgring 23",
+    "location": {
+            "lon": 50.3289194, 
+            "lat": 6.9376359
+    }},
+    {"name": "Nürburgring 24",
+    "location": {
+            "lon": 50.3305979, 
+            "lat": 6.9384191
+    }},
+    {"name": "Nürburgring 25",
+    "location": {
+            "lon": 50.3315010, 
+            "lat": 6.9387114
+    }},
+    {"name": "Nürburgring 26",
+    "location": {
+            "lon": 50.3322137, 
+            "lat": 6.9367766
+    }},
+    {"name": "Nürburgring 27",
+    "location": {
+            "lon": 50.3331960, 
+            "lat": 6.9368631
+    }},
+    {"name": "Nürburgring 28",
+    "location": {
+            "lon": 50.3341507, 
+            "lat": 6.9380496
+    }},
+    {"name": "Nürburgring 29",
+    "location": {
+            "lon": 50.3353511, 
+            "lat": 6.9396210
+    }},
+    {"name": "Nürburgring 30",
+    "location": {
+            "lon": 50.3360879, 
+            "lat": 6.9423250
+    }},
+    {"name": "Nürburgring 31",
+    "location": {
+            "lon": 50.3365167, 
+            "lat": 6.9452892
+    }},
+    {"name": "Nürburgring 32",
+    "location": {
+            "lon": 50.3368591, 
+            "lat": 6.9466005
+    }},
+    {"name": "Nürburgring 33",
+    "location": {
+            "lon": 50.3374645, 
+            "lat": 6.9474404
+    }},
+    {"name": "Nürburgring 34",
+    "location": {
+            "lon": 50.3376783, 
+            "lat": 6.9493732
+    }},
+    {"name": "Nürburgring 35",
+    "location": {
+            "lon": 50.3373012, 
+            "lat": 6.9500776
+    }},
+    {"name": "Nürburgring 36",
+    "location": {
+            "lon": 50.3368724, 
+            "lat": 6.9496495
+    }},
+    {"name": "Nürburgring 37",
+    "location": {
+            "lon": 50.3365923, 
+            "lat": 6.9492971
+    }},
+    {"name": "Nürburgring 38",
+    "location": {
+            "lon": 50.3361114, 
+            "lat": 6.9485598
+    }},
+    {"name": "Nürburgring 39",
+        "location": {
+            "lon": 50.3354611, 
+            "lat": 6.9475517
+    }
+    }
+]

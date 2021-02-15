@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- LEAFLET -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin="">
+  </script>
+   <!-- END LEAFLET -->
+    <title>Nürburgring Live Map</title>
+    <style>
+      body {background-image: url("../static/cockpit.png"); background-repeat:no-repeat;}
+      .fixedcontainer {
+      background-color:#ddd;
+      position: fixed;
+      padding: 2em;
+      width: 1200px;
+      height: 560px;
+      left: 1780px;
+      top: 175px;
+      transform: translateX(-50%);
+      }
+      #logo {
+       width:1300px;
+       height:400px;
+       position: fixed;
+       top:0;
+       left:0;
+       background-image:url('../static/confluent.png');
+       background-repeat:no-repeat;
+      }
+      .h1container {
+       width:600px;
+       height:100px;
+       position: fixed;
+       top:38px;
+       left:520px;
+      }
+      #iphone {
+       width:1800px;
+       height:1600px;
+       background-image:url('../static/iphone.png');
+       background-size: 400px 840px;
+       background-repeat: no-repeat;
+       background-position: left 20px bottom 300px;
+       position: relative;
+      }
+      .h1iphone {
+       width:150px;
+       height:50px;
+       position: relative;
+       top:410px;
+       left:35px;
+      }
+      #udacity {
+       width: 1800px;
+       height: 1600px; 
+       background-image: url('../static/udacity.png');
+       background-repeat:no-repeat;
+       background-size: 645px 500px;
+       background-position: left 420px bottom 400px;
+       position: relative;
+      }
+      .h1udacity {
+       width:400px;
+       height:50px;
+       position: relative;
+       top:650px;
+       left:430px;
+      }
+      #mservices {
+       width:100%;
+       height:100%;
+       background-image:url('../static/mservices.png');
+       background-repeat:no-repeat;
+       background-size: 570px 480px;
+       background-position: left 1100px bottom 440px;
+       position: relative;
+      }
+      .h1mservices {
+       width:300px;
+       height:50px;
+       position: relative;
+       top:645px;
+       left:1100px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Confluent Logo -->
+    <div id="logo" class="logo">
+      <div class="h1container">
+        <h1 style="color:whitesmoke;font-size 42px;">connecting self driving car in a smart city</h1>
+    </div>
+    </div>
+    <!-- End Confluent Logo -->
+    
+    <!-- LEAFLET -->
+    <div id="mapid" class="fixedcontainer"></div>
+    <script src="../static/leaf.js"></script>
+    <!-- END LEAFLET -->
+
+    <!-- iPhone halterung -->
+    <div id="iphone" >
+      <div class="h1iphone">
+        <h1 style="color:whitesmoke;font-size 42px;">My iPhone</h1>
+    </div>
+    <!-- UDACITY -->
+    <div id="udacity">
+      <div class="h1udacity">
+        <h1 style="color:rgb(223, 59, 18);font-size 42px;">Self-Driving-Car-Simulator</h1>
+    </div>
+    <!-- Microservices -->
+    <div id="mservices">
+      <div class="h1mservices">
+        <h1 style="color:whitesmoke;font-size 42px;">Microservices</h1>
+    </div>
+    </div>
+    <!-- End Microservices -->
+    </div>
+    <!-- END UDACITY -->
+    </div>
+    <!-- End iPhone Halterung -->
+  </body>
+</html>
