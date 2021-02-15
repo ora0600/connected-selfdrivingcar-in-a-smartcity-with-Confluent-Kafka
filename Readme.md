@@ -54,7 +54,8 @@ cd self-driving-car
 wget https://d17h27t6h515a5.cloudfront.net/topher/2016/November/5831f290_simulator-macos/simulator-macos.zip
 unzip simulator-macos.zip 
 rm  simulator-macos.zip 
-# if you want rename the simulator App. 
+# if you want rename the simulator App. Please rename.
+# I did use SelfDrivingCar-Simulator, do renaming in MacOS Finder
 ```
 We are simulating a kind of car-cockpit with a navigator app. For this we need token, that's why we have to register at mapbox.com
 
