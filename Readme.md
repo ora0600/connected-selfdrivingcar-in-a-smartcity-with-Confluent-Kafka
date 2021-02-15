@@ -19,7 +19,7 @@ Before going into detail you have to prepare your environment as followed (I use
 * install important python modules
 * Have confluent cli installed, see [docu](https://docs.confluent.io/confluent-cli/current/installing.html)
 * Have Confluent Platform 6.1 running on your machine [Installation Guide](https://docs.confluent.io/platform/current/installation/installing_cp/zip-tar.html#prod-kafka-cli-install)
-* Download and unzip UDACITY Simulator. [Download from here](https://github.com/udacity/self-driving-car-sim) or use the app `SelfDrivingCar-Simulator` in cloned repository.
+* Download and unzip UDACITY Simulator. [Download from here](https://github.com/udacity/self-driving-car-sim) and rename the app `SelfDrivingCar-Simulator`.
 * have iTerm 2 installed
 * have a working notification App on your IoS device. I use Pushover but you can also use Telegram or similar apps
 
@@ -46,7 +46,7 @@ Clone my repository:
 git clone https://github.com/ora0600/connected-selfdrivingcar-in-a-smartcity-with-Confluent-Kafka.git
 ```
 Now, everything is stored for execute this demo.
-If you want to download Simlulator by yourself following these instructions:
+You need to download Simlulator by yourself following these instructions:
 Download Simulator Version 1 from : [UDACITY] (https://github.com/udacity/self-driving-car-sim)
 ```bash
 mkdir self-driving-car
