@@ -28,7 +28,19 @@ source.addEventListener('message', function(e){
     if (obj.latitude == 6.9426784 &&  obj.longitude == 50.3324277) {
       marker1.bindPopup("Business Meeting inkl. Unterkunft und Meeting Package. Buchen Sie Ihr nächstes Meeting bei uns, siehe <b>www.lindner.de</b>").openPopup();
     } 
-    
+    if (obj.latitude == 6.9475517 &&  obj.longitude == 50.3354611) {
+      marker1.bindPopup("Das <b>ring werk</b> heute im Angebot, 1 x Reifenwechseln inkl. Dunlop Reifen für 199€. Schauen Sie rein.").openPopup();
+    } 
+    if (obj.latitude == 6.9437624 &&  obj.longitude == 50.333050) {
+      marker1.bindPopup("Heute im <b>Eiffelstadl</b> Bio-Schnitzel mit Pommes und Salat für 19,98€. Wir würden uns freuen (-:").openPopup();
+    }
+    if (obj.latitude == 6.9373174 &&  obj.longitude == 50.3259029) {
+      marker1.bindPopup("Vegane Woche bei uns. <b>Alles Bio,</b> frisch und sehr geschmackvoll. Schauen Sie rein, wir freuen uns auf Sie.").openPopup();
+    }
+    if (obj.latitude == 6.9380496 &&  obj.longitude == 50.3341507) {
+      marker1.bindPopup("<b>Achtung</b> in der nächsten Kurve ein Unfall, bite fahren sie langsam...").openPopup();
+    }
+
     //
     mapMarkers1.push(marker1);
   }

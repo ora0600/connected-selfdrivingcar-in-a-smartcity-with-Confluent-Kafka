@@ -33,9 +33,11 @@ pip3 install python-socketio==2.1.2
 pip3 install eventlet
 pip3 install opencv-python
 pip3 install tensorflow
+pip3 install keras
 pip3 install Pillow
 pip3 install python-engineio==2.2.0
 pip3 install pykafka
+pip3 install confluent_kafka
 # Set Path for Python 3.8
 echo 'export PATH="/usr/local/opt/python@3.8/bin:$PATH"' >> ~/.bash_profile
 source ~/.bash_profile
@@ -64,7 +66,7 @@ To use the maps in our demo we need to get access. For this we have to register 
 You can follow this [youtube video](https://www.youtube.com/watch?v=vD9Ic8KqEDw)
 Please register under [mapbox.com](https://account.mapbox.com/auth/signin/?route-to=%22https://account.mapbox.com/access-tokens/%22)
 Enter your data, verify your email address and then login into mapbox.com and you will get your public token.
-Add your token into `data/leaf.js`: `accessToken: 'ABCD' //ENTER YOUR TOKEN HERE`
+Add your token into `static/leaf.js`: `accessToken: 'ABCD' //ENTER YOUR TOKEN HERE`
 
 ## Register to Pushover
 If you do not want to use Pushover, then use Telegram. In my github repositories I do have some samples around [Telegram](https://github.com/ora0600/apache-kafka-as-a-service-by-confluent/tree/master/webinar1).
