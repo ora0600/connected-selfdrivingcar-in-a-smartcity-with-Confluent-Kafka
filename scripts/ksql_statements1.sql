@@ -1,0 +1,1 @@
+CREATE OR REPLACE STREAM selfdrivingcar_s (selfdrivingcar VARCHAR, selfdrivingcarid VARCHAR, cargroup VARCHAR, timestamp_car VARCHAR,latitude DOUBLE, longitude DOUBLE) WITH (VALUE_FORMAT='json', KAFKA_TOPIC='selfdrivingcar', PARTITIONS=1);

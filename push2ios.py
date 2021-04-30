@@ -34,7 +34,7 @@ while True:
     #{"selfdrivingcar": "000001", "key": "000001_085622e4-65c0-415f-b4f1-079d00611961", "timestamp": "2021-01-20 10:36:21.741645", "latitude": 6.9426784, "longitude": 50.3324277}
     message5 = 'Vegane Woche bei uns. Alles Bio, frisch und sehr geschmackvoll. Schauen Sie rein, wir freuen uns auf Sie.'
     #{"selfdrivingcar": "000001", "key": "000001_448c021f-6af4-4fd0-b3cf-acb1df70e1a8", "timestamp": "2021-01-20 10:31:56.344242", "latitude": 6.9373174, "longitude": 50.3259029}
-    message6 = 'Achtung in der nächsten Kurve ein Unfall, bite fahren sie langsam...'
+    message6 = 'Achtung in der nächsten Kurve ein Unfall, bitte fahren sie langsam...'
     #{"selfdrivingcar": "000001", "key": "000001_1a733688-a827-47f1-b475-275f5c16ea16", "timestamp": "2021-01-20 10:34:04.033901", "latitude": 6.9380496, "longitude": 50.3341507}
     latitude=app_json_msg['latitude']
     longitude=app_json_msg['longitude']

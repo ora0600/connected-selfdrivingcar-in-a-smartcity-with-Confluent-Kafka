@@ -1,0 +1,1 @@
+CREATE OR REPLACE TABLE smartcity_t (selfdrivingcar VARCHAR PRIMARY KEY, providerkey VARCHAR , message VARCHAR,latitude DOUBLE, longitude DOUBLE) WITH (VALUE_FORMAT='json', KAFKA_TOPIC='smartcity',partitions=1);

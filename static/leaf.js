@@ -10,7 +10,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 
 mapMarkers1 = [];
 
-var source = new EventSource('/topic/selfdrivingcar'); //ENTER YOUR TOPICNAME HERE
+var source = new EventSource('/topic/CONNECTEDCAR_S'); //ENTER YOUR TOPICNAME HERE
 source.addEventListener('message', function(e){
 
   console.log('Message');
@@ -38,7 +38,7 @@ source.addEventListener('message', function(e){
       marker1.bindPopup("Vegane Woche bei uns. <b>Alles Bio,</b> frisch und sehr geschmackvoll. Schauen Sie rein, wir freuen uns auf Sie.").openPopup();
     }
     if (obj.latitude == 6.9380496 &&  obj.longitude == 50.3341507) {
-      marker1.bindPopup("<b>Achtung</b> in der nächsten Kurve ein Unfall, bite fahren sie langsam...").openPopup();
+      marker1.bindPopup("<b>Achtung</b> in der nächsten Kurve ein Unfall, bitte fahren sie langsam...").openPopup();
     }
 
     //

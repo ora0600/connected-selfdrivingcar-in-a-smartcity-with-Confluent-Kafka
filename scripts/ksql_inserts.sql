@@ -1,0 +1,3 @@
+INSERT INTO smartcity_t (selfdrivingcar, providerkey, message, latitude, longitude) VALUES ('000001','McDoof1','Attention: Cheeseburger down 0.39ct. Only Today', 6.9470903, 50.3351398);
+INSERT INTO smartcity_t (selfdrivingcar, providerkey, message, latitude, longitude) VALUES ('000001','Government','Attention: Corona-Pandemie, please stay safe at home', 6.9353768, 50.3252903);
+INSERT INTO smartcity_t (selfdrivingcar, providerkey, message, latitude, longitude) VALUES ('000001','Confluent','Attention: We are hiring', 6.9500776, 50.3373012);

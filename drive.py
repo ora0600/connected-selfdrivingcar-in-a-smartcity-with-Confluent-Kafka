@@ -13,25 +13,42 @@ import threading
 import uuid
 import time
 from datetime import datetime
-from pykafka import KafkaClient
- 
+import pytz
+from confluent_kafka import Producer
+
 sio = socketio.Server()
 app = Flask(__name__) #'__main__'
 speed_limit = 10
 
-client = KafkaClient(hosts='localhost:9092')
-topic = client.topics['selfdrivingcar']
-producer = topic.get_sync_producer()
+p = Producer({'bootstrap.servers': 'localhost:9092'})
 # GEO Data
 input_file = open ('geo.json')
 json_array = json.load(input_file)
 index: int = 0
+carkey = '"000001"'
+carid = '000001'
 data = {}
-data['selfdrivingcar'] = '000001' 
+data['selfdrivingcar'] = '000001'
 
 #GENERATE UUID
 def generate_uuid():
     return uuid.uuid4()
+
+def acked(err, msg):
+    if err is not None:
+        print("Failed to deliver message: {0}: {1}"
+              .format(msg.value(), err.str()))
+    else:
+        print("Message produced: {0}".format(msg.value()))
+    
+    print("delivery_callback. error={}. message={}".format(err, msg))
+    print("message.topic={}".format(msg.topic()))
+    print("message.timestamp={}".format(msg.timestamp()))
+    print("message.key={}".format(msg.key()))
+    print("message.value={}".format(msg.value()))
+    print("message.partition={}".format(msg.partition()))
+    print("message.offset={}".format(msg.offset()))
+
 
 def sendit2Kafka():
     global index
@@ -39,20 +56,25 @@ def sendit2Kafka():
         index = 0
     # current position
     coordinates = json_array[index]['location']
+    lat = str(coordinates['lat'])
+    lon = str(coordinates['lon'])
     # build record
-    data['key'] = data['selfdrivingcar'] + '_' + str(generate_uuid())
-    data['timestamp'] = str(datetime.utcnow())
+    data['selfdrivingcarid'] = data['selfdrivingcar'] + '_' + str(generate_uuid())
+    tz = pytz.timezone('Europe/Berlin')
+    data['cargroup'] = data['selfdrivingcar']
+    data['timestamp_car'] = str(datetime.now(tz))
     data['latitude'] = coordinates['lat']
     data['longitude'] = coordinates['lon']
     message = json.dumps(data)   
     threading.Timer(2.5, sendit2Kafka).start()
     print("#########################################")
-    #print("send current location to kafka:")
-    #print(json_array[index]['name'])
-    #print(json_array[index]['location'])
     print(message)
-    # produce to kafka
-    producer.produce(message.encode('ascii'))
+    #p.produce('selfdrivingcar', key=carkey, value=message, callback=acked)
+    #cts = current_milli_time()
+    p.produce('selfdrivingcar', key=carkey, value=message, on_delivery=acked)# , timestamp=1614342029354)
+    #p.poll(0.5)
+    #p.flush(30)
+    p.flush()
     print("#########################################")
     index=index+1    
 
@@ -74,16 +96,7 @@ def telemetry(sid, data):
     image = np.array([image])
     steering_angle = float(model.predict(image))
     throttle = 1.0 - speed/speed_limit
-    #randomval = random.choice(nearby)
-    #if speed > 0:
-    #    location = 'Highway / Autobahn'
-    #else:
-    #    location = 'Stopped! '
-    #print('{} {} {}'.format(location, randomval, speed)) 
     print('{} {} {}'.format(steering_angle, throttle, speed))
-    # Hier muss man die Aktionen machen, vielleicht mit einer Bilderkennung
-    print('Data send in realtime to Confluent Kafka cluster')
-
     send_control(steering_angle, throttle)
  
 

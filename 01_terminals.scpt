@@ -15,10 +15,16 @@ on run argv
         write text "bash ./01-2_geo_consumer.sh"
         split vertically with default profile
     end tell
-    # open second terminal and consume
+    # open third terminal and consume
     tell third session of current tab of current window
         write text "cd " & BASEDIR
         write text " bash ./01-3_push2ios.sh"
+        split vertically with default profile
+    end tell
+    # open fourth terminal and consume
+    tell fourth session of current tab of current window
+        write text "cd " & BASEDIR
+        write text " bash 01-4_ksql.sh"
     end tell
   end tell
 end run
